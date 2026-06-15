@@ -1,0 +1,63 @@
+/* Typography customizations */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #0F2747;
+}
+::-webkit-scrollbar-thumb {
+    background: #D4AF37;
+    border-radius: 5px;
+    border: 2px solid #0F2747;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #e1c360;
+}
+
+/* Touch Safety Override */
+#before-after-slider {
+    position: relative;
+    touch-action: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+#after-image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Premium Hover Lift Animations */
+.hover-lift {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+.hover-lift:hover {
+    transform: translateY(-6px);
+}
+
+/* Testimonial card transition effect */
+.testimonial-card {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Custom spinning animation for status icon */
+@keyframes spinSlow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+    animation: spinSlow 8s linear infinite;
+}
