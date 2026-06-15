@@ -124,7 +124,7 @@ function initBeforeAfterSlider() {
 
 const testimonials = [
     {
-        quote: "Clevy Cleaning Service exceeded my expectations. The team was professional, punctual, and left my home spotless.",
+        quote: "Clevi Cleaning Service exceeded my expectations. The team was professional, punctual, and left my home spotless.",
         author: "Sarah M.",
         location: "Bonsall, CA",
         initials: "SM"
